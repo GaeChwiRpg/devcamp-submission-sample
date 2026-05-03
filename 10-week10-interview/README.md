@@ -36,12 +36,16 @@
 - "모를 때" 답변이 신뢰를 잃지 않는 패턴(인정 + 본인 추론 + 학습 의지)인가
 - 기술 답변이 책 case study처럼 "실무 case + 본인 경험" 결합되는가
 
-## 이 샘플에서 먼저 볼 것
+## 미션 시작 전에 보면 좋은 것
 
-1. `evidence/abc-answer-pack.md` — 공식 적용 Before/After
-2. `evidence/interview-script.md` — 1분/3분 답변
-3. `evidence/follow-up-questions.md` — 꼬리질문 대비
-4. `evidence/dont-know-strategy.md` — 모를 때
-5. `evidence/tech-qa-pack.md` — 기술 case study
+1. 교재 `books/06-week10-backend-interview-survival.md` (특히 A-B-C 공식 + 꼬리질문 + 모를 때 + 기술 case study 챕터)
+2. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
+3. 본인의 Week 3 `evidence/problem-solving-story.md` — A-B-C 답변에 그대로 재활용 가능
+4. 본인의 Week 1~7 evidence 파일들 — 기술 case study 답변의 출처
+5. `evidence/README.md` 템플릿
+6. `report.md`
+7. `docs/review-rubric.md`
+
+(정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 
 핵심은 기술 나열이 아니라, **A-B-C로 흐름이 보이는 답변 + 꼬리질문/모를 때까지 대비된 준비**입니다.

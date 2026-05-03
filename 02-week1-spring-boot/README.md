@@ -43,11 +43,15 @@
 - 테스트 3개 이상 + 성공/실패/예외 케이스가 다 보이는가
 - 예외 처리가 일관적인가 (`@RestControllerAdvice` 같은 글로벌 처리)
 
-## 이 샘플에서 먼저 볼 것
+## 미션 시작 전에 보면 좋은 것
 
-1. `report.md` — 학습 흐름과 의사결정
-2. `evidence/layer-separation-notes.md` 와 `evidence/transactional-snapshot.md`
-3. PR diff에서 `PostController`, `PostService`, `PostRepository` 분리 모습
-4. `evidence/response-samples.md` — Postman 결과
+1. 교재 `books/02-week1-lv1-spring-boot-required.md` 1~6교시
+2. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
+3. `project/README.md` — Spring Initializr 시작 가이드 + 4 endpoint 표
+4. `evidence/README.md` — 어떤 evidence를 남겨야 하는지
+5. `report.md` — 시도/판단/결과/회고 템플릿
+6. `docs/review-rubric.md`
+
+(정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 
 핵심은 코드를 작성한 사실이 아니라 **3계층과 트랜잭션의 경계를 본인이 설명할 수 있는가**입니다.

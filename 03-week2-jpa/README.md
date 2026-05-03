@@ -41,12 +41,16 @@
 - 본인 언어로 N+1 신호 → 해결의 흐름을 설명할 수 있는가
 - 변경 감지를 사용한 update 메서드가 1개 이상 있는가 (save() 호출 없이)
 
-## 이 샘플에서 먼저 볼 것
+## 미션 시작 전에 보면 좋은 것
 
-1. `evidence/n1-detection-guide.md` — `show_sql` 켜는 법, N+1 신호 패턴
-2. `evidence/association-owner-decision.md` — 주인 결정 근거
-3. `evidence/dirty-checking-snapshot.md` — 변경 감지 적용
-4. `report.md`
-5. PR diff에서 `Post`/`Comment` 연관관계 + LAZY 기본 + N+1 전후 쿼리
+1. 교재 `books/03-week2-lv2-jpa.md` (영속성 컨텍스트, 연관관계, LAZY/N+1, 변경 감지 챕터)
+2. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
+3. `evidence/n1-detection-guide.md` — `show_sql` 켜는 법, N+1 신호 패턴 (학습 보조)
+4. `project/README.md` — Week 1 코드 복사 + JPA 설정 가이드
+5. `evidence/README.md` — 어떤 evidence를 남겨야 하는지
+6. `report.md`
+7. `docs/review-rubric.md`
+
+(정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 
 핵심은 "JPA로 바꿨다"가 아니라, **영속성 컨텍스트 + 연관관계 + LAZY 세 축을 본인이 설명할 수 있는가**입니다.
