@@ -14,13 +14,17 @@
 - `evidence/before-after-table.md`
 - `project/` 안 실제 코드
 
-## 이 샘플에서 먼저 볼 것
+## 미션 시작 전에 보면 좋은 것
 
-1. `project/README.md` — baseline + 미션 흐름
-2. `project/MEASUREMENT-OPTIONS.md` — 부하 발생기 + 프로파일러 후보 메뉴 (각 1택)
-3. `report.md` 템플릿
-4. `evidence/README.md` 템플릿
-5. PR diff에서 프로파일링 결과와 개선 우선순위 예시
+1. 본인이 학습한 프로파일링 자료 (async-profiler / VisualVM / JFR 중 하나라도)
+2. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
+3. `project/README.md` — baseline + 미션 흐름 (핫스팟 후보 명시)
+4. `project/MEASUREMENT-OPTIONS.md` — 부하 발생기 + 프로파일러 후보 메뉴 (각 1택)
+5. `evidence/README.md` 템플릿
+6. `report.md` 템플릿
+7. `docs/review-rubric.md`
+
+(정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 
 `project/` 안에 baseline 코드와 Actuator metrics 활성 환경이 이미 들어 있어 환경 세팅 없이 부하/프로파일링에 바로 들어갈 수 있습니다.
 

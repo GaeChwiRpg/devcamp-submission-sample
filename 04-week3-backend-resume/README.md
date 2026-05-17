@@ -36,11 +36,15 @@
 - 문제해결 서사 1개가 1분/3분 답변용으로 길이 가능한가
 - 책의 "탈락 이력서" 패턴(사용했다/구현했다 류)이 after에서 사라졌는가
 
-## 이 샘플에서 먼저 볼 것
+## 미션 시작 전에 보면 좋은 것
 
-1. `evidence/resume-bullets-before.md` 와 `resume-bullets-after.md` — 변환 흐름
-2. `evidence/numerization-pattern.md` — 수치화 패턴 적용 표
-3. `evidence/problem-solving-story.md` — 면접 답변용 서사
-4. `report.md`
+1. 교재 `books/04-week3-backend-resume-differentiation.md` 1·4장
+2. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
+3. 본인의 사전학습~Week 2 evidence 파일들 — 수치 출처 추적용
+4. `evidence/README.md` — 어떤 자산을 남겨야 하는지
+5. `report.md`
+6. `docs/review-rubric.md`
+
+(정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 
 핵심은 "이력서를 채웠다"가 아니라 **각 문장이 본인 evidence로 추적 가능하고, 문제해결 서사로 1분 이상 말할 수 있는가**입니다.

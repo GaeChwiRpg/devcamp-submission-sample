@@ -30,10 +30,14 @@ Week 1에 Spring Boot로 들어가기 전에 두 가지를 한 번씩 끝내 둡
 - Git 명령 흐름이 명령 단위로 보이는가 (Part A)
 - 환경 셀프체크 3가지가 실제로 통과했는가 (Part B)
 
-## 이 샘플에서 먼저 볼 것
+## 미션 시작 전에 보면 좋은 것
 
-1. `report.md`
-2. `evidence/README.md`
-3. 명령 이력 + 환경 셀프체크 4 파일
+1. 교재 `books/01-onboarding-git-basics.md` 1~9장
+2. 이 README의 Part A·B 섹션
+3. `evidence/README.md` — 어떤 자산을 남겨야 하는지
+4. `report.md` — 본인 셀프체크 결과를 적는 템플릿
+5. `docs/review-rubric.md`
+
+(정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 
 핵심은 "정답"이 아니라 (1) 제출 흐름을 몸에 익히고 (2) Week 1 시작 시 환경 디버깅으로 첫 주를 태우지 않는 것입니다.
