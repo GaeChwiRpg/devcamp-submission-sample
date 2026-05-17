@@ -1,0 +1,121 @@
+name: mission-guard
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate mission scope
+        env:
+          BRANCH_NAME: ${{ github.event.pull_request.head.ref }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
+          MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
+          COUNT="$(echo "$MISSION_DIRS" | sed '/^$/d' | wc -l | tr -d ' ')"
+
+          if [ "$COUNT" -ne 1 ]; then
+            echo "Exactly one mission directory must change per PR."
+            exit 1
+          fi
+
+          TARGET="$(echo "$MISSION_DIRS" | head -n 1)"
+          MISSION_ID="$(basename "$TARGET")"
+
+          [ "$BRANCH_NAME" = "submit/$MISSION_ID" ] || (echo "Invalid branch name" && exit 1)
+          [ -f "$TARGET/report.md" ] || (echo "report.md missing" && exit 1)
+          [ -d "$TARGET/evidence" ] || (echo "evidence missing" && exit 1)
+
+          echo "$CHANGED" | grep -qx "$TARGET/report.md" || (echo "report.md must be updated" && exit 1)
+          echo "$CHANGED" | grep -E "^$TARGET/evidence/" | grep -Ev '/(README\.md|\.gitkeep)$' >/dev/null || (
+            echo "At least one real evidence file must change"
+            exit 1
+          )
+
+          if [ -d "$TARGET/project" ]; then
+            echo "$CHANGED" | grep -E "^$TARGET/project/" | grep -Ev '/(README\.md|\.gitkeep|MEASUREMENT-OPTIONS\.md)$' >/dev/null || (
+              echo "Code missions must change real files under project/"
+              exit 1
+            )
+          fi
+
+      - name: Validate report content
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
+          MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
+          TARGET="$(echo "$MISSION_DIRS" | head -n 1)"
+          MISSION_ID="$(basename "$TARGET")"
+
+          # report.md body 길이: frontmatter / 헤더 / 빈 줄 / 체크박스 라인을 빼고
+          # 학생이 자기 본문을 한 단락이라도 적었는지 확인 (최소 200자).
+          BODY="$(awk '
+            BEGIN{ in_fm=0; fm_count=0 }
+            /^---[[:space:]]*$/ { fm_count++; if (fm_count<=2) { in_fm=(fm_count==1); next } }
+            in_fm { next }
+            /^[[:space:]]*#/ { next }
+            /^[[:space:]]*-[[:space:]]*\[[ xX]\]/ { next }
+            /^[[:space:]]*$/ { next }
+            { print }
+          ' "$TARGET/report.md")"
+
+          BODY_LEN="$(printf '%s' "$BODY" | tr -d '[:space:]' | wc -c | tr -d ' ')"
+
+          if [ "$BODY_LEN" -lt 200 ]; then
+            echo "report.md body too short ($BODY_LEN chars). Write at least 200 chars of your own — frontmatter, headers, and checklist lines don't count."
+            exit 1
+          fi
+
+      - name: Validate code mission has real source change
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
+          MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
+          TARGET="$(echo "$MISSION_DIRS" | head -n 1)"
+
+          # project/가 있는 미션은 .java 또는 .sql 변경이 ≥1 있어야 함.
+          # README/MEASUREMENT-OPTIONS만 바뀌어서는 안 됨.
+          if [ -d "$TARGET/project" ]; then
+            if ! echo "$CHANGED" | grep -E "^$TARGET/project/.*\.(java|sql|kt|gradle)$" >/dev/null; then
+              echo "Code missions must change at least one .java / .sql / .kt / .gradle file under project/."
+              exit 1
+            fi
+          fi
+
+      - name: Validate Week 4~7 before/after evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
+          MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
+          TARGET="$(echo "$MISSION_DIRS" | head -n 1)"
+          MISSION_ID="$(basename "$TARGET")"
+
+          # Week 4~7 미션은 evidence/에 before/after 비교 자산이 있어야 함.
+          # 파일명에 'before' 또는 'after'가 있거나, 파일 내용에 둘 다가 포함되어 있으면 통과.
+          case "$MISSION_ID" in
+            05-week4-*|06-week5-*|07-week6-*|08-week7-*)
+              if find "$TARGET/evidence" -type f \( -iname "*before*" -o -iname "*after*" \) | head -1 | grep -q .; then
+                exit 0
+              fi
+              if grep -ril -e "before" -e "after" "$TARGET/evidence" | head -1 | grep -q .; then
+                exit 0
+              fi
+              echo "Week 4~7 missions must include before/after comparison evidence (filename or body)."
+              exit 1
+              ;;
+          esac
