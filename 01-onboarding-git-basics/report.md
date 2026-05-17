@@ -7,7 +7,7 @@ status: "sample"
 
 # Git/환경 사전학습
 
-## Part A. Git/GitHub 제출 흐름 (책 1~9장)
+## Part A. Git/GitHub 제출 흐름
 
 - [ ] `submit/<mission-id>` 브랜치를 만들었다.
 - [ ] add / commit / push / PR을 직접 실행했다.
