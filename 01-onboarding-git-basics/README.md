@@ -13,7 +13,7 @@ Week 1에 Spring Boot로 들어가기 전에 두 가지를 한 번씩 끝내 둡
 
 ### Part B. Java/IntelliJ/Gradle 환경 셀프체크
 
-- JDK 17 설치 확인 (`java -version`)
+- JDK 21 설치 확인 (`java -version`)
 - IntelliJ IDEA에서 Spring 프로젝트 import → Run 성공
 - `./gradlew bootRun` 8080 포트 바인딩 확인
 

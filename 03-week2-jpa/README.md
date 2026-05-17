@@ -14,7 +14,8 @@
 
 ## 이번 주에 해야 하는 것
 
-- Week 1 코드를 JPA 기반으로 리팩토링 (Week 1 베이스를 그대로 이어감)
+- **본인의 Week 1 코드를 이 폴더로 복사**해서 시작 (`02-week1-spring-boot/project/` → `03-week2-jpa/project/`). 시작 가이드는 `project/README.md` 참고.
+- Week 1 코드를 JPA 기반으로 리팩토링 (메모리 저장소 → `JpaRepository`)
 - Post + Comment 연관관계 추가 (`@ManyToOne` + `@OneToMany`)
 - **연관관계 주인을 본인이 결정**하고 그 근거 evidence
 - 모든 연관관계는 **LAZY 기본** (책 3교시 5장)

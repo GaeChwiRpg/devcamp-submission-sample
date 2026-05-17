@@ -14,7 +14,10 @@
 
 ## 이번 주에 해야 하는 것
 
-- 게시글(또는 동일 난이도 도메인) API 4개 endpoint (`POST/GET/GET-by-id/PUT`) 구현
+- **새 Spring Boot 프로젝트 생성** ([Spring Initializr](https://start.spring.io), Java 21, Spring Boot 3.3.x). 시작 가이드는 `project/README.md` 참고.
+- **게시글(Post) 도메인** API 4개 endpoint (`POST/GET/GET-by-id/PUT`) 구현
+  - Week 2 JPA에서 Post-Comment 연관관계로 자연스럽게 이어가려면 게시글 도메인이 가장 안전합니다.
+  - 같은 난이도의 다른 도메인(책/일정/메모 등)도 OK이지만 Week 2 미션 문구도 그에 맞춰 본인이 변환해야 합니다.
 - **3계층 분리**: Controller / Service / Repository (각 책임 분리 근거를 evidence에 남김)
 - **@Transactional 1개 이상 적용** + 왜 그곳에 붙였는지 근거
 - Postman으로 4 endpoint 호출 → 응답 JSON과 상태 코드 캡처

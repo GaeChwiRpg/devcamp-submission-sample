@@ -11,14 +11,15 @@ status: "sample"
 
 - [ ] Todo 테이블 스키마 + 제약조건 + 인덱스 작성
 - [ ] CRUD SQL 4종 (INSERT / SELECT / UPDATE / DELETE) 직접 작성
-- [ ] 프로그래머스 SQL 문제 2개 풀이 (SELECT, GROUP BY)
+- [ ] 프로그래머스 [Q1: 평균 일일 대여 요금](https://school.programmers.co.kr/learn/courses/30/lessons/151136) 정답 처리
+- [ ] 프로그래머스 [Q2: 재구매 상품과 회원 리스트](https://school.programmers.co.kr/learn/courses/30/lessons/131536) 정답 처리
 
 ## 제출 파일
 
 - [ ] `evidence/todo-schema.sql`
 - [ ] `evidence/todo-crud.sql`
-- [ ] `evidence/programmers-select.sql`
-- [ ] `evidence/programmers-group-by.sql`
+- [ ] `evidence/programmers-q1-rental-fee.sql`
+- [ ] `evidence/programmers-q2-repurchase.sql`
 
 ## 배운 점 / 막혔던 점
 

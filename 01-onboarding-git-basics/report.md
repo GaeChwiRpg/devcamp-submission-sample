@@ -15,7 +15,7 @@ status: "sample"
 
 ## Part B. 환경 셀프체크
 
-- [ ] `java -version`이 17.x로 찍힌다.
+- [ ] `java -version`이 21.x로 찍힌다.
 - [ ] IntelliJ에서 Spring 프로젝트 import + Run 성공.
 - [ ] `./gradlew bootRun`이 8080 포트 바인딩까지 진행됐다.
 

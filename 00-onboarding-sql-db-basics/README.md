@@ -18,15 +18,18 @@
 
 - Todo 테이블 설계 + 제약조건 + 인덱스
 - CRUD SQL 직접 작성 (INSERT/SELECT/UPDATE/DELETE)
-- 프로그래머스 SQL 문제 2개 풀이 (SELECT 유형, GROUP BY 유형)
+- 프로그래머스 SQL 문제 2개 풀이:
+  - **Q1.** [평균 일일 대여 요금 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/151136) (SELECT 유형)
+  - **Q2.** [재구매가 일어난 상품과 회원 리스트 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/131536) (GROUP BY 유형)
+  - 프로그래머스에서 정답 처리된 쿼리를 복붙해 evidence 파일로 남깁니다.
 
 ## 이번 주에 제출할 것
 
 - `report.md`
 - `evidence/todo-schema.sql` — Todo 테이블 스키마 + 제약조건 + 인덱스
 - `evidence/todo-crud.sql` — INSERT/SELECT/UPDATE/DELETE 예시
-- `evidence/programmers-select.sql` — 프로그래머스 SELECT 답안
-- `evidence/programmers-group-by.sql` — 프로그래머스 GROUP BY 답안
+- `evidence/programmers-q1-rental-fee.sql` — Q1 답안 ([문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/151136))
+- `evidence/programmers-q2-repurchase.sql` — Q2 답안 ([문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131536))
 
 ## 평가 기준
 
