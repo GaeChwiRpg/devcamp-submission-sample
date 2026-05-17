@@ -7,6 +7,12 @@ status: "sample"
 
 # Week 1 Spring Boot
 
+## 시작 전 환경 셀프체크
+
+- [ ] `java -version` 이 21.x 로 찍힌다
+- [ ] IntelliJ에서 Spring 프로젝트 import + Run 성공
+- [ ] `./gradlew bootRun` 이 8080 포트 바인딩까지 진행됐다
+
 ## 이번 주에 한 것
 
 - [ ] 새 Spring Boot 프로젝트 생성 (Spring Initializr, Java 21, Spring Boot 3.3.x)
@@ -20,6 +26,8 @@ status: "sample"
 
 ## 제출 파일
 
+- [ ] `evidence/env-jdk-version.txt`
+- [ ] `evidence/intellij-run-and-bootrun-log.md`
 - [ ] `evidence/api-contract.md`
 - [ ] `evidence/response-samples.md`
 - [ ] `evidence/test-results.md`

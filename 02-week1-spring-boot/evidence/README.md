@@ -2,6 +2,11 @@
 
 이 폴더는 본 미션의 핵심 학습 포인트가 본인 작업에 적용된 흔적을 남기는 곳입니다.
 
+## 환경 셀프체크 (시작 전)
+
+- `env-jdk-version.txt` — `java -version` 출력 (21.x 확인)
+- `intellij-run-and-bootrun-log.md` — IntelliJ Run + `./gradlew bootRun` 8080 포트 바인딩 로그
+
 ## API 자산
 
 - `api-contract.md` — endpoint/메서드/상태코드 정리
