@@ -58,7 +58,7 @@ cd 02-week1-spring-boot/project
 | GET | /api/posts/{id} | 단건 조회 | 200 / 404 |
 | PUT | /api/posts/{id} | 수정 | 200 / 404 / 400 |
 
-## 3계층 구조 (책 5교시 1장)
+## 3계층 구조
 
 ```
 src/main/java/.../

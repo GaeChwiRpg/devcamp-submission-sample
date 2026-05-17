@@ -24,7 +24,7 @@ status: "sample"
 - [ ] `evidence/dirty-checking-snapshot.md`
 - [ ] `project/src/main/java/...`
 
-## 책의 5가지 핵심 학습 포인트 매핑
+## 5가지 핵심 학습 포인트 매핑
 
 - 영속성 컨텍스트 4 기능 → 변경 감지 evidence
 - @Entity/@Table/@Id 전략 → 엔티티 설계 evidence
@@ -34,5 +34,5 @@ status: "sample"
 
 ## 배운 점
 
-- 책의 5 핵심 중 가장 학습 효과 컸던 것 + 왜
+- 5 핵심 중 가장 학습 효과 컸던 것 + 왜
 - 다음 주차(Week 3 이력서) 이력서 문장으로 변환 시 가장 강조하고 싶은 결정

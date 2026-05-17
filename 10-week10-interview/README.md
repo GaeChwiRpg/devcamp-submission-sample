@@ -1,22 +1,20 @@
 # 10-week10-interview
 
-> 교재: `books/06-week10-backend-interview-survival.md` (특히 A-B-C 답변 공식 + 꼬리질문 + "모를 때" 대처 + 기술 case study)
+이번 주는 단순히 "면접 답변 정리"가 아니라, **4 프레임(A-B-C 공식 / 꼬리질문 / 모를 때 / 기술 case study)을 본인 답변에 적용**하는 미션입니다.
 
-이번 주는 단순히 "면접 답변 정리"가 아니라, **책의 4 프레임(A-B-C 공식 / 꼬리질문 / 모를 때 / 기술 case study)을 본인 답변에 적용**하는 미션입니다.
+## 핵심 4 프레임 (이번 주 적용 대상)
 
-## 책의 핵심 4 프레임 (이번 주 적용 대상)
-
-1. **A-B-C 답변 공식** (책 1교시 2장 2절): A=상황/문제, B=시도/판단, C=결과/회고
-2. **꼬리질문 완전 정복** (책 1교시 2장 3절): 본인 답변에서 면접관이 던질 follow-up 미리 예상 + 답안
-3. **"모를 때" 대처 전략** (책 3교시 2장 2절): 모르는 영역에서 신뢰를 잃지 않는 답변 패턴
-4. **기술 case study** (책 1·2·3교시): 인덱스 / 트랜잭션 / 캐시 등 자주 나오는 기술 질문 답변
+1. **A-B-C 답변 공식**: A=상황/문제, B=시도/판단, C=결과/회고
+2. **꼬리질문 완전 정복**: 본인 답변에서 면접관이 던질 follow-up 미리 예상 + 답안
+3. **"모를 때" 대처 전략**: 모르는 영역에서 신뢰를 잃지 않는 답변 패턴
+4. **기술 case study**: 인덱스 / 트랜잭션 / 캐시 등 자주 나오는 기술 질문 답변
 
 ## 이번 주에 해야 하는 것
 
 - 지금까지 한 미션 중 **3개 이상**을 A-B-C 공식 답변으로 정리 (각각 1분/3분 분량)
 - 각 답변마다 **예상 꼬리질문 3개 이상** + 본인 답안
 - "모를 때" 대처 패턴 답변 1개 작성
-- 기술 case study 답변 5개 (책 인덱스/트랜잭션/캐시 챕터에서 골라서)
+- 기술 case study 답변 5개 (인덱스/트랜잭션/캐시 등에서 골라서)
 - 발표용 슬라이드 흐름 메모
 
 ## 이번 주에 제출할 것
@@ -25,26 +23,25 @@
 - `evidence/interview-script.md` — 미션 3개 이상 A-B-C 답변 (1분/3분 분량)
 - `evidence/follow-up-questions.md` — 답변별 꼬리질문 + 답안
 - `evidence/presentation-notes.md` — 발표 슬라이드 흐름
-- **`evidence/abc-answer-pack.md`** — 책 A-B-C 공식 적용 비교 표 (Before/After)
+- **`evidence/abc-answer-pack.md`** — A-B-C 공식 적용 비교 표 (Before/After)
 - **`evidence/tech-qa-pack.md`** — 인덱스/트랜잭션/캐시 기술 답변 5개
-- **`evidence/dont-know-strategy.md`** — "모를 때" 대처 패턴 (책 3교시 2장 2절)
+- **`evidence/dont-know-strategy.md`** — "모를 때" 대처 패턴
 
 ## 평가 기준
 
 - A-B-C 공식이 본인 답변에 명시적으로 보이는가 (A: ___ / B: ___ / C: ___ 표시)
 - 꼬리질문 답변이 단순 "예/아니오"가 아니라 근거 + 다음 follow-up까지 대비되는가
 - "모를 때" 답변이 신뢰를 잃지 않는 패턴(인정 + 본인 추론 + 학습 의지)인가
-- 기술 답변이 책 case study처럼 "실무 case + 본인 경험" 결합되는가
+- 기술 답변이 "실무 case + 본인 경험" 결합되는가
 
 ## 미션 시작 전에 보면 좋은 것
 
-1. 교재 `books/06-week10-backend-interview-survival.md` (특히 A-B-C 공식 + 꼬리질문 + 모를 때 + 기술 case study 챕터)
-2. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
-3. 본인의 Week 3 `evidence/problem-solving-story.md` — A-B-C 답변에 그대로 재활용 가능
-4. 본인의 Week 1~7 evidence 파일들 — 기술 case study 답변의 출처
-5. `evidence/README.md` 템플릿
-6. `report.md`
-7. `docs/review-rubric.md`
+1. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
+2. 본인의 Week 3 `evidence/problem-solving-story.md` — A-B-C 답변에 그대로 재활용 가능
+3. 본인의 Week 1~7 evidence 파일들 — 기술 case study 답변의 출처
+4. `evidence/README.md` 템플릿
+5. `report.md`
+6. `docs/review-rubric.md`
 
 (정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 

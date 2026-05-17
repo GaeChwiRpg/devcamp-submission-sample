@@ -10,7 +10,7 @@
 
 1. 이 README의 "이 레포를 보는 법" 섹션
 2. `00-onboarding-sql-db-basics/README.md`
-3. 본인이 해당 주차 책의 챕터를 읽고 본인 풀이로 시작
+3. 해당 주차 README의 "이번 주에 해야 하는 것"을 읽고 본인 풀이로 시작
 4. `docs/review-rubric.md` (AI 리뷰가 무엇을 보는지)
 
 ## 이 레포를 보는 법

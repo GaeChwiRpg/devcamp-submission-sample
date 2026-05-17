@@ -24,7 +24,7 @@ status: "sample"
 - [ ] `evidence/tech-qa-pack.md`
 - [ ] `evidence/dont-know-strategy.md`
 
-## 책의 4 프레임 매핑
+## 4 프레임 매핑
 
 - A-B-C 공식 → abc-answer-pack + interview-script
 - 꼬리질문 → follow-up-questions

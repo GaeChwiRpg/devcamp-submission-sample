@@ -1,10 +1,10 @@
 # Evidence
 
-이 폴더는 교재 `books/05-week8-10x-ai-native-developer.md`의 두 축이 본인 작업에 적용된 흔적을 남기는 곳입니다.
+이 폴더는 본 미션의 두 축이 본인 작업에 적용된 흔적을 남기는 곳입니다.
 
 ## 축 A — 코딩 단계 6 요소 (필수)
 
-책 7주차 04~07장. 모두 작성:
+모두 작성:
 
 - `claude-md-snapshot.md` — 본인이 작성한 CLAUDE.md 본문 + 왜 이 규칙들을 골랐는지
 - `commands-snapshot.md` — 본인이 만든 커스텀 Command 1개 정의 + 실제 실행 로그
@@ -16,15 +16,15 @@
 
 ## 축 B — 라이프사이클 5 단계 중 **2개 이상** (필수)
 
-책 9·10주차. 학생이 골라서 작성:
+학생이 골라서 작성:
 
-| 파일 | 옵션 | 책 챕터 |
+| 파일 | 옵션 | 도구 예시 |
 | --- | --- | --- |
-| `lifecycle-planning.md` | 기획 | 9주차 03 (Jira MCP), AI PRD |
-| `lifecycle-testing.md` | 테스트 | 9주차 06 (Playwright MCP), 07 (Browser/Puppeteer MCP) |
-| `lifecycle-review.md` | 리뷰 | 10주차 01 (Claude GitHub Actions, CodeRabbit) |
-| `lifecycle-ops.md` | 배포·운영 | 10주차 06 (Sentry MCP), 02~07 (Docker, Terraform, AWS) |
-| `lifecycle-collaboration.md` | 협업 가속 | 9주차 02 (gh CLI), 04 (Sub-agents), 05 (claude-squad) |
+| `lifecycle-planning.md` | 기획 | Jira MCP, AI PRD |
+| `lifecycle-testing.md` | 테스트 | Playwright MCP, Browser/Puppeteer MCP |
+| `lifecycle-review.md` | 리뷰 | Claude GitHub Actions, CodeRabbit |
+| `lifecycle-ops.md` | 배포·운영 | Sentry MCP, Docker, Terraform, AWS |
+| `lifecycle-collaboration.md` | 협업 가속 | gh CLI, Sub-agents, claude-squad |
 
 각 파일은 다음 4가지 섹션을 가집니다:
 

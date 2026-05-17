@@ -16,13 +16,12 @@
 
 ## 미션 시작 전에 보면 좋은 것
 
-1. 교재 `books/00-onboarding-sql-db-basics.md` 9장 인덱스 + 본인이 학습한 책 자료
-2. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
-3. `project/README.md` — baseline + 미션 흐름 (단계별 가이드 포함)
-4. `project/MEASUREMENT-OPTIONS.md` — 측정 도구 후보 메뉴 (EXPLAIN + 응답 시간 각 1택)
-5. `evidence/README.md` 템플릿
-6. `report.md` 템플릿
-7. `docs/review-rubric.md`
+1. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
+2. `project/README.md` — baseline + 미션 흐름 (단계별 가이드 포함)
+3. `project/MEASUREMENT-OPTIONS.md` — 측정 도구 후보 메뉴 (EXPLAIN + 응답 시간 각 1택)
+4. `evidence/README.md` 템플릿
+5. `report.md` 템플릿
+6. `docs/review-rubric.md`
 
 (정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 

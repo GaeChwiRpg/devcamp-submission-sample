@@ -1,18 +1,16 @@
 # 00-onboarding-sql-db-basics
 
-> 교재: `books/00-onboarding-sql-db-basics.md` (1~10장 SQL/DB 기초)
+이번 주는 **DB 기초 → CRUD → 제약조건 → 연관관계 → JOIN/GROUP BY → 트랜잭션 → 인덱스** 흐름을 본인 손으로 한 번 끝까지 돌리는 미션입니다.
 
-이번 주는 책의 **DB 기초 → CRUD → 제약조건 → 연관관계 → JOIN/GROUP BY → 트랜잭션 → 인덱스** 흐름을 본인 손으로 한 번 끝까지 돌리는 미션입니다.
+## 핵심 학습 포인트
 
-## 책의 핵심 학습 포인트
-
-- DB 기초 개념: 테이블/레코드/키 (책 1·3장)
-- CRUD: INSERT/SELECT/UPDATE/DELETE/ALTER (책 4·5장)
-- 제약조건: NOT NULL / DEFAULT / UNIQUE / FOREIGN KEY (책 5장)
-- 연관관계와 JOIN (책 6장)
-- DISTINCT / AGGREGATE / GROUP BY / ORDER BY / LIMIT / Sub Query (책 7장)
-- 트랜잭션 ACID (책 8장)
-- 인덱스 + EXPLAIN (책 9장 — Week 4와 다시 연결)
+- DB 기초 개념: 테이블/레코드/키
+- CRUD: INSERT/SELECT/UPDATE/DELETE/ALTER
+- 제약조건: NOT NULL / DEFAULT / UNIQUE / FOREIGN KEY
+- 연관관계와 JOIN
+- DISTINCT / AGGREGATE / GROUP BY / ORDER BY / LIMIT / Sub Query
+- 트랜잭션 ACID
+- 인덱스 + EXPLAIN (Week 4와 다시 연결)
 
 ## 이번 주에 해야 하는 것
 
@@ -39,11 +37,10 @@
 
 ## 미션 시작 전에 보면 좋은 것
 
-1. 교재 `books/00-onboarding-sql-db-basics.md` 1~10장
-2. 이 README의 "이번 주에 해야 하는 것" 섹션
-3. `evidence/README.md` — 어떤 SQL 자산을 남겨야 하는지
-4. `report.md` — 본인 학습 흐름을 적는 템플릿
-5. `docs/review-rubric.md` — AI 리뷰가 무엇을 평가하는지
+1. 이 README의 "이번 주에 해야 하는 것" 섹션
+2. `evidence/README.md` — 어떤 SQL 자산을 남겨야 하는지
+3. `report.md` — 본인 학습 흐름을 적는 템플릿
+4. `docs/review-rubric.md` — AI 리뷰가 무엇을 평가하는지
 
 (정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 

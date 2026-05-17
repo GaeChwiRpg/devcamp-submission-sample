@@ -1,14 +1,12 @@
 # 09-week8-ai-native
 
-> 교재: `books/05-week8-10x-ai-native-developer.md` (7~10주차 본문 전체 — Context/Prompt 기초부터 MCP·Sub-agents·Playwright·CodeRabbit·AI DevOps까지)
-
 이번 주는 "AI를 썼다"가 아니라 **AI 네이티브 개발 사이클의 어디에 어떻게 AI를 썼는지를 본인 흔적으로 증명**하는 미션입니다. 면접 질문 "AI를 어떤 개발 과정에 어떻게 적용했나요?"에 단계별로 답할 수 있어야 통과.
 
 ## 미션 두 축
 
 ### 축 A. 코딩 단계 6 요소 (필수, 깊이)
 
-책 7주차 04~07장을 본인 코드에 직접 적용:
+다음 6 요소를 본인 코드에 직접 적용:
 
 1. **Context Engineering** — 3 유형 중 본인 미션에 맞는 컨텍스트 패키징
 2. **Needle in a Haystack 관리** — 요약 / `claude.md` GPS / `/clear` 리셋 중 1개 전략
@@ -19,15 +17,15 @@
 
 ### 축 B. 개발 라이프사이클 5 단계 중 **2개 이상** 적용 (필수, 폭)
 
-책 9·10주차에서 다루는 단계별 AI 도구. 학생이 본인 미션 흐름에 맞게 골라서 적용:
+단계별 AI 도구. 학생이 본인 미션 흐름에 맞게 골라서 적용:
 
-| 옵션 | 책 챕터 | 적용 예시 (Week 4 인덱스 미션 기준) |
-| --- | --- | --- |
-| **1. 기획** | 9주차 03 (Jira MCP) | Jira MCP 또는 GitHub Issue로 미션 분해 + AI에게 티켓 생성 위임 |
-| **2. 테스트** | 9주차 06 (Playwright MCP) | Playwright MCP로 E2E 시나리오 자동 생성 (인덱스 적용 전후 응답시간 검증) |
-| **3. 리뷰** | 10주차 01 (Claude Actions, CodeRabbit) | 본인 PR에 Claude GitHub Actions Review 또는 CodeRabbit 적용 + 받은 리뷰 메모 |
-| **4. 배포·운영** | 10주차 06 (Sentry MCP) | Sentry MCP로 baseline 앱 에러 모니터링 + AI에게 에러 분석 위임 |
-| **5. 협업 가속** | 9주차 02·04 (gh CLI, Sub-agents) | Sub-agents로 병렬 작업 또는 gh CLI + AI로 PR 본문 자동화 |
+| 옵션 | 적용 예시 (Week 4 인덱스 미션 기준) |
+| --- | --- |
+| **1. 기획** | Jira MCP 또는 GitHub Issue로 미션 분해 + AI에게 티켓 생성 위임 |
+| **2. 테스트** | Playwright MCP로 E2E 시나리오 자동 생성 (인덱스 적용 전후 응답시간 검증) |
+| **3. 리뷰** | 본인 PR에 Claude GitHub Actions Review 또는 CodeRabbit 적용 + 받은 리뷰 메모 |
+| **4. 배포·운영** | Sentry MCP로 baseline 앱 에러 모니터링 + AI에게 에러 분석 위임 |
+| **5. 협업 가속** | Sub-agents로 병렬 작업 또는 gh CLI + AI로 PR 본문 자동화 |
 
 **최소 2개 옵션**을 학생이 골라 본인 환경에서 한 번씩 돌려보고 결과를 evidence에 남깁니다. 단순 메모 X, **실제 도구 실행 + 결과 캡처/로그 + 본인 검증**.
 
@@ -42,7 +40,7 @@
 
 ### 축 A — 코딩 6 요소 (7개 evidence)
 
-| evidence 파일 | 교재 매핑 |
+| evidence 파일 | 매핑 요소 |
 | --- | --- |
 | `report.md` | (시도/판단/결과/회고 + 라이프사이클 단계 선택 근거) |
 | `evidence/claude-md-snapshot.md` | 4. claude.md 헌법 |
@@ -80,12 +78,11 @@
 
 ## 미션 시작 전에 보면 좋은 것
 
-1. 교재 `books/05-week8-10x-ai-native-developer.md` 7주차 04~07장 (필수) + 9·10주차 (라이프사이클 옵션 학습)
-2. 이 README의 두 축 + 평가 기준
-3. 본인이 다시 풀 이전 미션 폴더 (Week 4·5·6 중 하나)
-4. `evidence/README.md` — 어떤 evidence를 어떻게 남겨야 하는지
-5. `report.md` 템플릿
-6. `docs/review-rubric.md`
+1. 이 README의 두 축 + 평가 기준
+2. 본인이 다시 풀 이전 미션 폴더 (Week 4·5·6 중 하나)
+3. `evidence/README.md` — 어떤 evidence를 어떻게 남겨야 하는지
+4. `report.md` 템플릿
+5. `docs/review-rubric.md`
 
 (정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 
