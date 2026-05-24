@@ -1,4 +1,4 @@
-# 00-onboarding-sql-db-basics
+# 01-onboarding-sql-db-basics
 
 > 이 미션은 강의 `AI한테 시키기 전에 알아야 할 SQL/DB 초기초`의 적용편입니다.
 

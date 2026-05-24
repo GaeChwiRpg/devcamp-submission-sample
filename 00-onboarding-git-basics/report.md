@@ -1,5 +1,5 @@
 ---
-mission_id: "01-onboarding-git-basics"
+mission_id: "00-onboarding-git-basics"
 week: 0
 submission_type: "docs"
 status: "sample"

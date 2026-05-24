@@ -1,4 +1,4 @@
-# 01-onboarding-git-basics
+# 00-onboarding-git-basics
 
 > 이 미션은 강의 `AI한테 시키기 전에 알아야 할 Git 초기초`의 적용편입니다.
 

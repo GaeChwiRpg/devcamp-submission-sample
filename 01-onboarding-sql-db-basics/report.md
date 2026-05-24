@@ -1,5 +1,5 @@
 ---
-mission_id: "00-onboarding-sql-db-basics"
+mission_id: "01-onboarding-sql-db-basics"
 week: 0
 submission_type: "docs"
 status: "sample"

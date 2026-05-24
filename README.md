@@ -9,7 +9,7 @@
 처음이라면 5분 안에 다음 순서로 보세요:
 
 1. 이 README의 "이 레포를 보는 법" 섹션
-2. `00-onboarding-sql-db-basics/README.md`
+2. `00-onboarding-git-basics/README.md`
 3. 해당 주차 README의 "이번 주에 해야 하는 것"을 읽고 본인 풀이로 시작
 4. `docs/review-rubric.md` (AI 리뷰가 무엇을 보는지)
 
@@ -50,8 +50,8 @@
 
 ## 이번 주 미션 찾는 법
 
-- `00-onboarding-sql-db-basics/`
-- `01-onboarding-git-basics/`
+- `00-onboarding-git-basics/`
+- `01-onboarding-sql-db-basics/`
 - `02-week1-spring-boot/`
 - `03-week2-jpa/`
 - `04-week3-backend-resume/`
