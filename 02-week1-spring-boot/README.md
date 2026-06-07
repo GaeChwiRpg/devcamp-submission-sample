@@ -30,7 +30,7 @@
 - **@Transactional 1개 이상 적용** + 왜 그곳에 붙였는지 근거
 - Postman으로 4 endpoint 호출 → 응답 JSON과 상태 코드 캡처
 - 서비스 테스트 **3개 이상** (성공/실패/예외 1개씩)
-- 팀 규칙 합의 문서 작성
+- (팀) 팀 채널 고정 메시지로 학습 운영 4 항목 합의 — TIL 공유 방식 / 막힘·진행 공유 / 팀 목표 / sync 시간·방식 (레포 산출물 X)
 
 ## 이번 주에 제출할 것
 
@@ -43,7 +43,7 @@
 - **`evidence/layer-separation-notes.md`** — 3계층 분리 근거
 - **`evidence/transactional-snapshot.md`** — @Transactional 적용 위치 + 근거
 - `project/` 안 실제 Spring Boot 코드 + 테스트
-- (팀) 팀 규칙 합의 문서
+- (팀) 팀 채널 고정 메시지에 학습 운영 4 항목 합의 (TIL / 막힘·진행 공유 / 팀 목표 / sync 시간·방식) — 레포 제출 X, 팀 채널 1기-team-NN 고정 메시지로만
 
 ## 평가 기준
 
