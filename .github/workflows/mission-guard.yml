@@ -18,7 +18,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin "${{ github.base_ref }}" --depth=1
+          git fetch origin "${{ github.base_ref }}"
           CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
           MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
           COUNT="$(echo "$MISSION_DIRS" | sed '/^$/d' | wc -l | tr -d ' ')"
@@ -52,7 +52,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin "${{ github.base_ref }}" --depth=1
+          git fetch origin "${{ github.base_ref }}"
           CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
           MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
           TARGET="$(echo "$MISSION_DIRS" | head -n 1)"
@@ -81,7 +81,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin "${{ github.base_ref }}" --depth=1
+          git fetch origin "${{ github.base_ref }}"
           CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
           MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
           TARGET="$(echo "$MISSION_DIRS" | head -n 1)"
@@ -99,7 +99,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin "${{ github.base_ref }}" --depth=1
+          git fetch origin "${{ github.base_ref }}"
           CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
           MISSION_DIRS="$(echo "$CHANGED" | awk -F/ '$1 !~ /^\\./ && $1 != "meta" && $1 != "docs" && NF >= 2 {print $1}' | sort -u)"
           TARGET="$(echo "$MISSION_DIRS" | head -n 1)"
