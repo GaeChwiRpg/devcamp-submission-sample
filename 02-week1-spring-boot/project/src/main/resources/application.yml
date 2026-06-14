@@ -1,0 +1,9 @@
+# 🧪 sample PR placeholder
+spring:
+  application:
+    name: devcamp-week1-sample
+server:
+  port: 8080
+logging:
+  level:
+    co.dingcodingco.week1sample: DEBUG
