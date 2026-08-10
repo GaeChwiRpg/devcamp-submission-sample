@@ -36,14 +36,20 @@
 - "모를 때" 답변이 신뢰를 잃지 않는 패턴(인정 + 본인 추론 + 학습 의지)인가
 - 기술 답변이 "실무 case + 본인 경험" 결합되는가
 
+## 이력서 연결 (Week 9 → 이력서)
+
+팀 레포 `AI-EVIDENCE.md`에서 본인 레인의 **채워진 이력서 문장을 그대로 이력서에 이식**하세요.
+Week 9에서 빈칸을 채웠다면 이번 주에 새로 쓸 문장은 없습니다 — 복사해 붙이고, 면접 꼬리질문("그 숫자는 어떻게 나왔나요?")에 증거 링크로 답할 준비만 하면 됩니다.
+
 ## 미션 시작 전에 보면 좋은 것
 
 1. 이 README의 "이번 주에 해야 하는 것" + "평가 기준"
 2. 본인의 Week 3 `evidence/problem-solving-story.md` — A-B-C 답변에 그대로 재활용 가능
 3. 본인의 Week 1~7 evidence 파일들 — 기술 case study 답변의 출처
-4. `evidence/README.md` 템플릿
-5. `report.md`
-6. `docs/review-rubric.md`
+4. 팀 레포 `AI-EVIDENCE.md` — 본인 레인 문장 + 증거 (AI 관련 꼬리질문의 답)
+5. `evidence/README.md` 템플릿
+6. `report.md`
+7. `docs/review-rubric.md`
 
 (정답 PR은 미션 종료 후 운영진이 별도로 공유합니다.)
 

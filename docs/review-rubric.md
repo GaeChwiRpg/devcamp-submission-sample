@@ -3,7 +3,7 @@
 이 문서는 Claude 기반 AI 리뷰가 학생 PR에 점수를 매길 때 사용하는 5개 축의 기준을 학생도 미리 볼 수 있게 풀어 쓴 것입니다.
 
 - 단일 진실(SoT): 이 파일.
-- 시스템 연결: `prompts/pr_review.md`의 `{{scoring_criteria}}` 자리와 `src/lib/review-agent/score.ts`의 1~5 정규화 로직이 이 기준을 그대로 사용합니다.
+- 시스템 연결: `src/lib/review-agent/config.ts`의 구조화된 1·3·5점 기준이 `prompts/pr_review.md`에 직접 주입되고, `src/lib/review-agent/score.ts`가 축 점수 평균을 계산합니다.
 - 학생 노출: 샘플 레포 `docs/review-rubric.md`로 SHA-256 동일하게 미러링 → 학생은 모집 페이지에서도, 자기 레포에서도 같은 기준을 봅니다.
 - 공통 점수 스케일: 1점 = 보강 필요, 3점 = 통과 가능, 5점 = 모범. 0.5 단위 가능.
 
@@ -17,13 +17,15 @@
 | 검증 근거 품질 | evidence/ 안의 측정·로그·비교가 실제로 결론을 받쳐주는가 | 캡처만 있음, 수치 없음 | before/after는 있지만 측정 조건 불명확 | before/after + 측정 조건 + 재현 명령이 모두 있음 |
 | 설명력 | report.md가 "시도 → 판단 → 결과 → 회고"로 읽히는가 | 체크박스만 있고 본문 빈약 | 흐름은 있지만 한두 단락이 추상적 | 비전공자가 읽어도 무엇을 왜 했는지 그대로 따라갈 수 있음 |
 
-## 주차별 가중치 메모
+## 주차별 판정 가이드
+
+아래 내용은 축별 점수를 판단할 때의 주차별 엄격도 가이드입니다. 종합 점수는 다섯 축의 동일 가중 산술 평균이며 별도 숫자 가중치는 적용하지 않습니다.
 
 - Week 0~1 (사전학습·Spring Boot): 요구사항 충족도와 설명력에 가중. 검증 근거는 약하게.
 - Week 2 (JPA): 기술 포인트 적용 가중. N+1 한 케이스라도 쿼리 로그로 설명되면 OK.
 - Week 4~7 (인덱스·동시성·프로파일링·Redis): **검증 근거 품질** 가중. before/after 표 + 재현 명령 없으면 5점 불가.
 - Week 8 (AI 네이티브): 설명력 가중. AI가 좋아 보이는 결과를 줘도, 학생이 검증 루프를 어떻게 돌렸는지 안 적혀 있으면 3점 이하.
-- Week 9~10 (팀 프로젝트·면접): 5축 균형. 협업 흔적(API 계약·리뷰 반영 로그)을 검증 근거 축으로 본다.
+- Week 9~10 (팀 프로젝트·면접): 5축 균형. 협업 흔적(API 계약·리뷰 반영 로그)을 검증 근거 축으로 본다. AI Native 레인은 `AI-EVIDENCE.md`의 이력서 문장 빈칸 숫자가 증거와 일치하는지, `REVIEW-VERDICT.md`에 근거 있는 반려가 1건 이상 있는지를 검증 근거 축으로 본다. AI 보조 기능의 20건 눈 채점 표는 정확도 %가 아니라 측정·오답 분석 여부로 판단한다.
 
 ## 자동 차단 vs AI 채점
 
@@ -31,7 +33,7 @@
 
 ## 관련 문서
 
-- 점수 산식: `src/lib/review-agent/score.ts` (각 축 1~5 → clamp + 평균 → `overall_score`)
+- 점수 산식: `src/lib/review-agent/score.ts` (각 축 1~5, 0.5 단위 → clamp + 동일 가중 평균 → `overall_score`)
 - 프롬프트: `prompts/pr_review.md`
 - 형식 차단 규칙: 샘플 레포 `.github/workflows/mission-guard.yml`
 - 학생 미러본: 샘플 레포 `docs/review-rubric.md` (이 파일과 SHA-256 동일)
